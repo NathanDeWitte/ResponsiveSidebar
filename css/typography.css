@@ -1,0 +1,281 @@
+@font-face {
+    font-family: 'klavika_bold';
+    src: url('../fonts/klavika/klavika-bold-webfont.eot');
+    src: url('../fonts/klavika/klavika-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/klavika/klavika-bold-webfont.woff2') format('woff2'),
+    url('../fonts/klavika/klavika-bold-webfont.woff') format('woff'),
+    url('../fonts/klavika/klavika-bold-webfont.ttf') format('truetype'),
+    url('../fonts/klavika/klavika-bold-webfont.svg#klavika_regularbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'klavikalight';
+    src: url('../fonts/klavika/klavika-light-webfont.eot');
+    src: url('../fonts/klavika/klavika-light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/klavika/klavika-light-webfont.woff2') format('woff2'),
+    url('../fonts/klavika/klavika-light-webfont.woff') format('woff'),
+    url('../fonts/klavika/klavika-light-webfont.ttf') format('truetype'),
+    url('../fonts/klavika/klavika-light-webfont.svg#klavikalight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'klavika_regular';
+    src: url('../fonts/klavika/klavika-regular-webfont.eot');
+    src: url('../fonts/klavika/klavika-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/klavika/klavika-regular-webfont.woff2') format('woff2'),
+    url('../fonts/klavika/klavika-regular-webfont.woff') format('woff'),
+    url('../fonts/klavika/klavika-regular-webfont.ttf') format('truetype'),
+    url('../fonts/klavika/klavika-regular-webfont.svg#klavika_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*
+	-----------------------------------------
+	Basic link and button styles
+	-----------------------------------------
+*/
+a, a:link, a:visited { -moz-transition: color, background-color, opacity, padding, 0.32s, ease-in-out; -o-transition: color, background-color, opacity, padding, 0.32s, ease-in-out; -webkit-transition: color, background-color, opacity, padding, 0.32s, ease-in-out; transition: color, background-color, opacity, padding, 0.32s, ease-in-out; text-decoration: none; color: #0096d4; border-color: #0096d4; }
+a:hover, a:active { color: #0083b9; border-color: #0085be; }
+figure a, figure a:link, figure a:visited, figure a:hover, figure a:active {border: none;}
+
+a.button, a.button:link, a.button:visited, button {
+    display: inline-block;
+    font-family: 'klavika_regular', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    padding: 10px 20px 8px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    border: none;
+    text-transform: uppercase;
+    background: #0096d4;
+    color: #fff;
+}
+
+a.button:hover, a.button:active, button:hover {
+    background: #00a1e1;
+    color: #fff;
+}
+
+a.button.alt, a.button.alt:link, a.button.alt:visited, button.alt {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+a.button.alt:hover, a.button.alt:active, button.alt:hover {
+    background: #fff;
+    color: #444;
+}
+
+a.noborder {
+    border: none;
+    border: none !important;
+}
+
+/*
+	-----------------------------------------
+	Button colors
+	-----------------------------------------
+*/
+
+a.button.red, a.button.red:link, a.button.red:visited, button.red {
+    background: #cb1474;
+}
+
+a.button.red:hover, a.button.red:active, button.red:hover {
+    background: #e8148e;
+}
+
+a.button.green, a.button.green:link, a.button.green:visited, button.green {
+    background: #00c693;
+}
+
+a.button.green:hover, a.button.green:active, button.green:hover {
+    background: #00d9a2;
+    color: #fff;
+}
+
+a.button.blue, a.button.blue:link, a.button.blue:visited, button.blue {
+    background: #0096d4;
+}
+
+a.button.blue:hover, a.button.blue:active, button.blue:hover {
+    background: #00a1e1;
+    color: #fff;
+}
+
+/*
+	-----------------------------------------
+	Inverted buttons
+	-----------------------------------------
+*/
+
+a.button.red.alt, a.button.red.alt:link, a.button.red.alt:visited, button.red.alt {
+    background: transparent;
+    border: 1px solid #cb1474;
+    color: #cb1474;
+}
+
+a.button.red.alt:hover, a.button.red.alt:active, button.red.alt:hover {
+    background: #cb1474;
+    color: #fff;
+}
+
+a.button.green.alt, a.button.green.alt:link, a.button.green.alt:visited, button.green.alt {
+    background: transparent;
+    border: 1px solid #00c693;
+    color: #00c693;
+}
+
+a.button.green.alt:hover, a.button.green.alt:active, button.green.alt:hover {
+    background: #00c693;
+    color: #fff;
+}
+
+a.button.blue.alt, a.button.blue.alt:link, a.button.blue.alt:visited, button.blue.alt {
+    background: transparent;
+    border: 1px solid #0096d4;
+    color: #0096d4;
+
+}
+
+a.button.blue.alt:hover, a.button.blue.alt:active, button.blue.alt:hover {
+    background: #0096d4;
+    color: #fff;
+}
+
+/*
+	-----------------------------------------
+	small button
+	-----------------------------------------
+*/
+
+a.button.small, a.button.small:link, a.button.small:visited, a.button.small:hover, a.button.small:active {
+    font-size: 12px;
+    padding: 6px 12px 4px;
+}
+
+
+
+a.button > i, button > i {
+    margin-left: 10px;
+}
+
+a.button.icnleft > i, button.icnleft > i {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+a.button.halfleft{ border-bottom-left-radius: 50px; border-bottom-right-radius: 0; border-top-left-radius: 50px; border-top-right-radius: 0; margin: 0; display: block; float: left;}
+a.button.halfright{ border-bottom-right-radius: 50px; border-bottom-left-radius: 0; border-top-right-radius: 50px; border-top-left-radius: 0; margin: 0; display: block; float: left;}
+
+/*
+	-----------------------------------------
+	Basic text styles
+	-----------------------------------------
+*/
+p {
+    padding: 0 0 25px 0;
+}
+
+strong, th, thead td, h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+/* Headings */
+h1, h2, h3 {
+    line-height: 1.2;
+    color: #444444;
+}
+/* Headings */
+
+h1 {
+    font-size: 55px;
+    margin: 0 0 40px 0;
+    font-weight: 400;
+    font-family: "klavikalight", Arial, Helvetica, sans-serif;
+    line-height: 1;
+}
+
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 40px;
+    }
+}
+
+h2 {
+    font-size: 35px;
+    margin: 0 0 25px 0;
+    font-weight: 400;
+    font-family: "klavikalight", Arial, Helvetica, sans-serif;
+}
+
+.introblock h2 {
+    margin-bottom: 0;
+}
+
+.introblock p {
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+h3 {
+    font-size: 28px;
+    margin: 0 0 25px 0;
+    font-weight: 400;
+    font-family: "klavikalight", Arial, Helvetica, sans-serif;
+}
+
+h3.blue, .company h3 {
+    color: #0096d4;
+}
+
+h3 a {
+    border: none;
+}
+
+h4 {
+    font-size: 14px;
+    margin: 0 0 12px 0;
+}
+
+h5 {
+    font-size: 12px;
+    margin: 0 0 12px 0;
+}
+/*
+	-----------------------------------------
+	RT text styles
+	-----------------------------------------
+*/
+.rt strong { font-weight: 700; }
+.rt h1 {/* indien anders dan standaard h1 */}
+.rt h2 {/* indien anders dan standaard h2 */}
+.rt h3 {/* indien anders dan standaard h3 */}
+.rt h4 {/* indien anders dan standaard h4 */}
+.rt ul { margin-left: 25px; list-style: disc; padding-bottom: 25px; }
+.rt ul li {margin-bottom: 5px;}
+.rt ol { margin-left: 25px; list-style: decimal; padding-bottom: 25px; }
+.rt figure {margin-bottom: 25px;}
+.rt blockquote { padding: 5px 0 5px 10px; border-left: 5px solid #00c693; font-size: 22px; color: #666666;line-height: 1.3; margin-bottom: 25px;}
+.rt table { border-left: 1px solid #ccc; border-top: 1px solid #ccc;  }
+.rt table tr td { border: 1px solid #ccc; border-left: none; border-top: none; padding: 4px; }
+.rt table tr th { border: 1px solid #ccc; border-left: none; border-top: none; padding: 4px; }
+.rt code { font-family: Monaco, "Courier New", monospace; }
+.rt pre { font-size: 13px; line-height: 18px; background: #F5F5F5; margin: 0 0 12px 0; padding: 10px; }
+.rt cite, .rt em { font-style: italic; }
+
+hr { background: none; height: 1px; width: 100%; border: none; border-top: 1px solid #ccc; }
+
+img[align="left"] { float: left; padding: 0 10px 10px 0; }
+
+img[align="right"] { float: right; padding: 0 0 10px 10px; }

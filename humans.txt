@@ -3,11 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Nathan De Witte -- Webdeveloper
 
 # THANKS
 
-    <name>
+    Lavagraphics for being Awesome
 
 # TECHNOLOGY COLOPHON
 
